@@ -37,7 +37,7 @@ def get_parts(part_data: str) -> dict:
     except Exception as e:
         print(f'Error: {e}')
         
-def main(header: list, pathCSV: str) -> pd.DataFrame:
+def createBOM(header: list, pathCSV: str) -> pd.DataFrame:
     '''
     Output dataframe
     
@@ -155,7 +155,7 @@ if __name__ == "__main__":
     
     print(50*'-')
     print("Creating Mouser BOM List")
-    bom_dataframe= main(HEARDERS, path)
+    bom_dataframe= createBOM(HEARDERS, path)
     
     print('Summary:\n')
     print(bom_summary(bom_dataframe))

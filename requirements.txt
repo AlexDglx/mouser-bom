@@ -1,0 +1,3 @@
+pandas
+price_parser
+python-dotenv
