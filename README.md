@@ -15,7 +15,7 @@ Get your Search API key at [mouser.com]('https://www.mouser.com'), log in to you
 
 ### Setup
 
-You never put your API key within your code. Create a .env and place your api key in the enironment file.
+You never put your API key within your code. Create a .env and place your api key in the environment file.
 
 `.env`
 ```python
