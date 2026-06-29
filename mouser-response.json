@@ -1,0 +1,141 @@
+{
+  "Errors": [],
+  "SearchResults": {
+    "NumberOfResult": 1,
+    "Parts": [
+      {
+        "Availability": "16404 In Stock",
+        "DataSheetUrl": "",
+        "Description": "Thick Film Resistors - SMD RCA0805 0R0 ET6 E3",
+        "FactoryStock": "0",
+        "ImagePath": "https://www.mouser.com/images/vishay/images/RCA_SPL.JPG",
+        "Category": "Thick Film Resistors - SMD",
+        "LeadTime": "84 Days",
+        "LifecycleStatus": "New at Mouser",
+        "Manufacturer": "Vishay / Draloric",
+        "ManufacturerPartNumber": "RCA08050000ZSEC",
+        "Min": "1",
+        "Mult": "1",
+        "MouserPartNumber": "594-RCA08050000ZSEC",
+        "ProductAttributes": [
+          {
+            "AttributeName": "Standard Pack Qty",
+            "AttributeValue": "20000"
+          }
+        ],
+        "PriceBreaks": [
+          {
+            "Quantity": 1,
+            "Price": "0,103 €",
+            "Currency": "EUR"
+          },
+          {
+            "Quantity": 10,
+            "Price": "0,059 €",
+            "Currency": "EUR"
+          },
+          {
+            "Quantity": 100,
+            "Price": "0,026 €",
+            "Currency": "EUR"
+          },
+          {
+            "Quantity": 250,
+            "Price": "0,021 €",
+            "Currency": "EUR"
+          },
+          {
+            "Quantity": 500,
+            "Price": "0,019 €",
+            "Currency": "EUR"
+          },
+          {
+            "Quantity": 1000,
+            "Price": "0,017 €",
+            "Currency": "EUR"
+          },
+          {
+            "Quantity": 5000,
+            "Price": "0,012 €",
+            "Currency": "EUR"
+          },
+          {
+            "Quantity": 20000,
+            "Price": "0,01 €",
+            "Currency": "EUR"
+          }
+        ],
+        "AlternatePackagings": null,
+        "ProductDetailUrl": "https://eu.mouser.com/ProductDetail/Vishay-Draloric/RCA08050000ZSEC?qs=u16ybLDytRYYGnHWcGT4XQ%3D%3D",
+        "Reeling": false,
+        "ROHSStatus": "RoHS Compliant",
+        "SuggestedReplacement": "",
+        "MultiSimBlue": 0,
+        "UnitWeightKg": {
+          "UnitWeight": 0.000027
+        },
+        "AvailabilityInStock": "16404",
+        "AvailabilityOnOrder": [
+          {
+            "Quantity": 20000,
+            "Date": "2026-07-02T00:00:00"
+          }
+        ],
+        "InfoMessages": [],
+        "SurchargeMessages": null,
+        "ProductCompliance": [
+          {
+            "ComplianceName": "TARIC",
+            "ComplianceValue": "8533210000"
+          },
+          {
+            "ComplianceName": "CNHTS",
+            "ComplianceValue": "8533211000"
+          },
+          {
+            "ComplianceName": "CAHTS",
+            "ComplianceValue": "8533210000"
+          },
+          {
+            "ComplianceName": "USHTS",
+            "ComplianceValue": "8533210030"
+          },
+          {
+            "ComplianceName": "JPHTS",
+            "ComplianceValue": "853321000"
+          },
+          {
+            "ComplianceName": "KRHTS",
+            "ComplianceValue": "8533219000"
+          },
+          {
+            "ComplianceName": "MXHTS",
+            "ComplianceValue": "8533210100"
+          },
+          {
+            "ComplianceName": "BRHTS",
+            "ComplianceValue": "85332120"
+          },
+          {
+            "ComplianceName": "ECCN",
+            "ComplianceValue": "EAR99"
+          }
+        ],
+        "TradeCompliance": [
+          {
+            "ComplianceName": "Country of Origin",
+            "ComplianceValue": "Israel"
+          },
+          {
+            "ComplianceName": "Assembly Country of Origin",
+            "ComplianceValue": "Not available"
+          },
+          {
+            "ComplianceName": "Country of Diffusion",
+            "ComplianceValue": "Not available"
+          }
+        ]
+      }
+    ]
+  }
+}
