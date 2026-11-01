@@ -75,8 +75,6 @@ def createBOM(header: list, pathCSV: str) -> pd.DataFrame:
                 try:
                     
                     match key:
-                        case "#":
-                            part_search_data.append(index)
                         
                         case "PriceBreaks":
                             for price in item.get('PriceBreaks'):
@@ -109,7 +107,7 @@ def createBOM(header: list, pathCSV: str) -> pd.DataFrame:
 
         bom_df = pd.DataFrame(bom_df)
         
-        new_file_name = input('Enter new file name:')
+        new_file_name = f'{datetime.now().strftime("%Y-%m-%d_%H%M%S")}_mouser_quote'
 
         bom_df.to_csv(f'{new_file_name}.csv',index=False, header=header,float_format='{:.3f}'.format)
         
@@ -135,7 +133,6 @@ def bom_summary(df: dict) -> dict:
 if __name__ == "__main__":
     
     HEARDERS = [
-    "#",
     "MouserPartNumber",
     "Category",   
     "Description",
@@ -151,7 +148,7 @@ if __name__ == "__main__":
     "ProductDetailUrl",
     "ImagePath"
     ]
-    path = "bom_list.csv"
+    path = "Running Device Proto 5B-Trace BOM_2.csv"
     
     print(50*'-')
     print("Creating Mouser BOM List")
