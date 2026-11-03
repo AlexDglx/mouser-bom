@@ -55,7 +55,6 @@ def createBOM(header: list, pathCSV: str) -> pd.DataFrame:
         
         sum_price=0
         sum_parts=0
-        
 
         for index, row in tqdm(product_df.iterrows(), desc="Creating BOM Mouser List..."):
             
@@ -82,7 +81,7 @@ def createBOM(header: list, pathCSV: str) -> pd.DataFrame:
                             part_search_data.append(bulk_price) 
                             
                         case "Pricing":
-                            part_search_data.append(f'{parse_price(bulk_price[0][1], decimal_separator=",").amount_float*qty} €')
+                            part_search_data.append(parse_price(bulk_price[0][1], decimal_separator=",").amount_float*qty)
                             sum_price+=parse_price(bulk_price[0][1], decimal_separator=",").amount_float*qty
                 
                         case "Quantity":
@@ -148,7 +147,7 @@ if __name__ == "__main__":
     "ProductDetailUrl",
     "ImagePath"
     ]
-    path = "Running Device Proto 5B-Trace BOM_2.csv"
+    path = "Running Device Proto 5B-Trace BOM REV3.csv"
     
     print(50*'-')
     print("Creating Mouser BOM List")
