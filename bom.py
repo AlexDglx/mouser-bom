@@ -29,7 +29,7 @@ def get_parts(part_data: str) -> dict:
     }
     
     try:
-        sleep(random.randint(1,5))
+        sleep(random.randint(1,2))
         response = requests.post(config["BASE_URL"], json=part_data)
         data = response.json()
         return data
@@ -167,7 +167,7 @@ if __name__ == "__main__":
     "ProductDetailUrl",
     "ImagePath"
     ]
-    path = "Running Device Proto 5B-Trace BOM REV3.csv"
+    path = "Running Device Proto 5B-Trace BOM REV4.csv"
     
     print(50*'-')
     print("Creating Mouser BOM List")
