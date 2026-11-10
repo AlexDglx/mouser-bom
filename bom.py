@@ -110,6 +110,8 @@ def createBOM(header: list, pathCSV: str) -> pd.DataFrame:
 
         bom_df.to_csv(f'{new_file_name}.csv',index=False, header=header,float_format='{:.3f}'.format)
         
+        bom_unavailable(bom_df)
+        
         return {"bom":bom_df, "amount":sum_price, "totalParts":sum_parts}
     except FileNotFoundError:
         print("File not found, check path")
@@ -128,6 +130,24 @@ def bom_summary(df: dict) -> dict:
     
     except AttributeError:
         print("Error parsing csv file.")
+
+def bom_unavailable(df:pd.DataFrame) -> pd.DataFrame:
+ 
+    unavailable = df[df["AvailabilityInStock"] != 0]
+    
+    try:       
+        if unavailable.size > 0:
+            unavailable.to_csv(f'{datetime.now().strftime("%Y-%m-%d_%H%M%S")}_unavailable_parts.csv', index=False)
+            
+        else:
+            print(50*'-')
+            print('All parts available.')
+            print(50*'-')
+        return unavailable    
+    
+    except Exception as err:
+        print(err)
+        
 
 if __name__ == "__main__":
     
