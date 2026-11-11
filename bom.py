@@ -167,8 +167,9 @@ if __name__ == "__main__":
     "ProductDetailUrl",
     "ImagePath"
     ]
-    path = "Running Device Proto 5B-Trace BOM REV4.csv"
-    
+    print(50*'-')
+    path = input("Add path to csv bom file: ", )
+     
     print(50*'-')
     print("Creating Mouser BOM List")
     bom_dataframe= createBOM(HEARDERS, path)
